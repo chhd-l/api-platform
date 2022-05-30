@@ -1,11 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import routers from "./router";
+import { useRoutes } from "react-router-dom";
+
+
+import './App.less';
 
 function App() {
+  const routes = useRoutes(routers);
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -18,6 +21,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <section>
+        {routes}
+      </section>
     </div>
   );
 }
