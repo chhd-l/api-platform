@@ -14,16 +14,23 @@ module.exports = {
     extend: {
       width: {
         am275: '275px',
+        am282: '282px',
+        am384: '384px',
         am1200: '1200px',
       },
       height: {
+        am222: '222px',
         am70: '70px',
+        am148: '148px',
         18: '300px',
       },
       fontSize: {
         am12: '12px',
         am16: '16px',
         am26: '26px',
+      },
+      padding: {
+        am20: '20px',
       },
       margin: {
         am_5: '5%',

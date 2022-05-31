@@ -1,21 +1,8 @@
+import Wrapper from '../../../../components/common/Wrapper'
 import styled from 'styled-components'
 import GoLang from '../../../../assets/image/GoLang.png'
 import JavaScript from '../../../../assets/image/JavaScript.png'
 
-const Wrapper = styled.div`
-  background: #ffffff;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  height: 148px;
-  width: 384px;
-  display: flex;
-  flex-direction: row;
-  margin-right: 20px;
-  padding: 20px;
-  &:hover {
-    border: 1px solid #95b94f;
-  }
-`
 const Img = styled.img`
   width: 54px;
   height: 54px;
@@ -56,7 +43,7 @@ const SDKTooling = () => {
   return (
     <div className="flex flex-row mt-2">
       {data.map((item) => (
-        <Wrapper key={item.key}>
+        <Wrapper key={item.key} className="flex flex-row p-am20" width="384px" height="148px">
           <Img src={item.img} />
           <div className="flex flex-col w-am275 text-left">
             <Title>{item.title}</Title>

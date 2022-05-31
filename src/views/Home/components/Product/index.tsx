@@ -1,19 +1,8 @@
+import Wrapper from '../../../../components/common/Wrapper'
 import styled from 'styled-components'
 import PlatformAPIs from '../../../../assets/image/PlatformAPIs.png'
 import SellerCenter from '../../../../assets/image/SellerCenter.png'
 
-const Wrapper = styled.div`
-  width: 282px;
-  height: 222px;
-  margin-right: 20px;
-  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  background-color: #fdfff8;
-  padding: 0 20px;
-  &:hover {
-    border: 1px solid #95b94f;
-  }
-`
 const Title = styled.div`
   font-size: 22px;
   color: #000000;
@@ -52,7 +41,7 @@ const Product = () => {
   return (
     <div className="flex flex-row mt-2">
       {data.map((item) => (
-        <Wrapper key={item.title}>
+        <Wrapper key={item.title} className="px-am20" width="282px" height="222px">
           <Img src={item.img} />
           <Title>{item.title}</Title>
           <Content>{item.desc}</Content>
