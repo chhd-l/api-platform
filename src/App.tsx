@@ -1,31 +1,22 @@
-import routers from "./router";
-import { useRoutes } from "react-router-dom";
+import routers from './router'
+import { useRoutes } from 'react-router-dom'
 
+import './App.less'
+import Home from './views/Home'
+import { ConfigProvider } from 'antd'
 
-import './App.less';
-
+// ConfigProvider.config({
+//   theme: '#6CA100',
+// })
 function App() {
-  const routes = useRoutes(routers);
+  const routes = useRoutes(routers)
   return (
+    // <ConfigProvider >
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <section>
-        {routes}
-      </section>
+      <section>{routes}</section>
     </div>
-  );
+    //  </ConfigProvider>
+  )
 }
 
-export default App;
+export default App
