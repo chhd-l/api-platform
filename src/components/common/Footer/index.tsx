@@ -52,7 +52,7 @@ const Footer = () => {
         </div>
       </Wrapper>
       <div className="border-t border-gray-400 ml-am_19 mr-am_7" />
-      <div className="flex ml-am_19 justify-between text-am12 text-am_333333 mr-am_7">
+      <div className="flex ml-am_19 justify-between text-am12 text-am_333333 mr-am_7 py-2">
         <span>Copyright © 2022 commercetools</span>
         <span>
           <span className="border-r border-gray-400 pr-2">Privacy Policy</span>
