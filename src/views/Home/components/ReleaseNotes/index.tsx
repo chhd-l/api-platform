@@ -4,13 +4,12 @@ const Wrapper = styled.div`
   background: #ffffff;
   border: 1px dashed #e6e6e6;
   border-radius: 4px 4px 0px;
-  width: 1200px;
+  margin-right: 7%;
 `
 const List = styled.div`
   display: flex;
   flex-direction: row;
   border-bottom: 1px dashed #e6e6e6;
-  height: 56px;
   line-height: 56px;
   font-size: 16px;
 `

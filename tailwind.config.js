@@ -26,7 +26,10 @@ module.exports = {
         am26: '26px',
       },
       margin: {
+        am_5: '5%',
+        am_7: '7%',
         am_19: '19%',
+        am_33: '33%',
       },
       textColor: {
         am_568300: '#568300',

@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import LOGO_black from '../../../assets/image/LOGO_black.png'
 
 const Wrapper = styled.div`
-  height: 340px;
   background-color: #f4f4f4;
   padding-left: 19%;
   padding-top: 20px;
@@ -30,17 +29,17 @@ const Footer = () => {
   return (
     <>
       <Wrapper>
-        <div className="text-left">
+        <div className="text-left mr-am_5">
           <Logo src={LOGO_black} />
           <span className="text-am_373737">德勤</span>
         </div>
-        <div className="text-am_333333 text-am12 text-left mx-20">
+        <div className="text-am_333333 text-am12 text-left mr-am_5">
           <p className="font-bold">Developer Center</p>
           {Developer.map((item) => (
             <p key={item}>{item}</p>
           ))}
         </div>
-        <div className="text-am_333333 text-am12 text-left mr-20">
+        <div className="text-am_333333 text-am12 text-left mr-am_33">
           <p className=" font-bold">Merchant Center</p>
           {MerchantCenter.map((item) => (
             <p key={item}>{item}</p>
@@ -52,8 +51,8 @@ const Footer = () => {
           ))}
         </div>
       </Wrapper>
-      <div className="border-t border-gray-400 ml-am_19 w-am1200" />
-      <div className="flex ml-am_19 justify-between text-am12 text-am_333333 w-am1200">
+      <div className="border-t border-gray-400 ml-am_19 mr-am_7" />
+      <div className="flex ml-am_19 justify-between text-am12 text-am_333333 mr-am_7">
         <span>Copyright © 2022 commercetools</span>
         <span>
           <span className="border-r border-gray-400 pr-2">Privacy Policy</span>

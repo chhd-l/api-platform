@@ -12,7 +12,7 @@ export default function Home() {
       <div className="bg-white">
         <HomeHeader />
         <img src={homeCard} alt="" />
-        <div className="ml-am_19">
+        <div className="ml-am_19 mr-am_5">
           <Title>Our Product</Title>
           <Product />
           <Title>SDKs and Tooling</Title>
