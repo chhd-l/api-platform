@@ -5,6 +5,7 @@ const Wrapper = styled.div`
   border: 1px dashed #e6e6e6;
   border-radius: 4px 4px 0px;
   margin-right: 7%;
+  width: 1200px;
 `
 const List = styled.div`
   display: flex;
