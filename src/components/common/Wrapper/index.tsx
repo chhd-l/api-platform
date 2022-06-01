@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export type WrapperProps = { width: string; height: string }
+export type WrapperProps = { width?: string; height?: string }
 
 const Wrapper = styled.div<WrapperProps>`
   margin-right: 20px;

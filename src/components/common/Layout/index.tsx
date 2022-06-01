@@ -1,5 +1,6 @@
-import React from 'react';
-import { Outlet } from "react-router-dom";
+import React from 'react'
+import { Outlet } from 'react-router-dom'
+import Wrapper from '../Wrapper'
 
 const Layout: React.FC = () => {
   return (
@@ -9,4 +10,4 @@ const Layout: React.FC = () => {
   )
 }
 
-export default Layout;
+export default Layout
