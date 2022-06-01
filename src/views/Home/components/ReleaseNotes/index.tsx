@@ -1,11 +1,13 @@
 import styled from 'styled-components'
+import MyTitle from '../MyTitle'
 
 const Wrapper = styled.div`
   background: #ffffff;
   border: 1px dashed #e6e6e6;
   border-radius: 4px 4px 0px;
-  margin-right: 7%;
+  /* margin-right: 7%; */
   width: 1200px;
+  margin: 0 auto;
 `
 const List = styled.div`
   display: flex;
@@ -51,17 +53,20 @@ const data = [
 
 const ReleaseNotes = () => {
   return (
-    <Wrapper>
-      {data.map((item) => (
-        <List key={item.text}>
-          <div className=" text-left flex flex-row ml-6 text-am_568300">
-            <div className="w-40 text-left">{item.date}</div>
-            <div className="w-20 text-left">HTTP API</div>
-          </div>
-          <div className=" text-left ml-28">{item.text}</div>
-        </List>
-      ))}
-    </Wrapper>
+    <>
+      <MyTitle>Release Notes</MyTitle>
+      <Wrapper>
+        {data.map((item) => (
+          <List key={item.text}>
+            <div className=" text-left flex flex-row ml-6 text-am_568300">
+              <div className="w-40 text-left">{item.date}</div>
+              <div className="w-20 text-left">HTTP API</div>
+            </div>
+            <div className=" text-left ml-28">{item.text}</div>
+          </List>
+        ))}
+      </Wrapper>
+    </>
   )
 }
 

@@ -3,6 +3,7 @@ import Layout from '../components/common/Layout'
 
 import Home from '../views/Home'
 import Detail from '../views/Detail'
+import { Search } from '../views/Search'
 
 const routers: RouteObject[] = [
   {
@@ -16,6 +17,10 @@ const routers: RouteObject[] = [
       {
         path: '/detail',
         element: <Detail />,
+      },
+      {
+        path: '/search',
+        element: <Search />,
       },
     ],
   },

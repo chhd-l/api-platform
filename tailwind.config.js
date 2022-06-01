@@ -8,6 +8,8 @@ module.exports = {
       white: '#FFFFFF',
       gray: {
         400: '#CCCCCC',
+        500: '#E6E6E6 ',
+        600: '#f4f4f4',
       },
     },
 
@@ -15,33 +17,52 @@ module.exports = {
       width: {
         am275: '275px',
         am282: '282px',
+        am284: '284px',
         am384: '384px',
+        am525: '525px',
+        am377: '377px',
         am1200: '1200px',
       },
       height: {
-        am222: '222px',
+        am26: '26px',
         am70: '70px',
         am148: '148px',
+        am222: '222px',
         18: '300px',
+      },
+      lineHeight: {
+        am26: '26px',
       },
       fontSize: {
         am12: '12px',
+        am14: '14px',
+        am22: '22px',
+        am24: '24px',
         am16: '16px',
         am26: '26px',
+        am50: '50px',
       },
       padding: {
         am20: '20px',
+        am24: '24px',
       },
       margin: {
         am_5: '5%',
         am_7: '7%',
+        am_11: '11%',
         am_19: '19%',
         am_33: '33%',
+        am20: '20px',
       },
       textColor: {
         am_568300: '#568300',
         am_373737: '#373737',
         am_333333: '#333333',
+        am_666666: '#666666',
+      },
+      inset: {
+        am50: '50px',
+        am160: '160px',
       },
     },
   },

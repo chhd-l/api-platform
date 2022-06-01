@@ -2,6 +2,8 @@ import Wrapper from '../../../../components/common/Wrapper'
 import styled from 'styled-components'
 import PlatformAPIs from '../../../../assets/image/PlatformAPIs.png'
 import SellerCenter from '../../../../assets/image/SellerCenter.png'
+import MyTitle from '../MyTitle'
+import { useNavigate } from 'react-router-dom'
 
 const Title = styled.div`
   font-size: 22px;
@@ -24,7 +26,6 @@ type ProductProps = {
   desc: string
   img: string
 }
-
 const data: ProductProps[] = [
   {
     title: 'Platform APIs',
@@ -38,16 +39,26 @@ const data: ProductProps[] = [
   },
 ]
 const Product = () => {
+  const navigate = useNavigate()
   return (
-    <div className="flex flex-row mt-2">
-      {data.map((item) => (
-        <Wrapper key={item.title} className="px-am20" width="282px" height="222px">
-          <Img src={item.img} />
-          <Title>{item.title}</Title>
-          <Content>{item.desc}</Content>
-        </Wrapper>
-      ))}
-    </div>
+    <>
+      <MyTitle>Our Product</MyTitle>
+      <div className="flex flex-row mt-2">
+        {data.map((item) => (
+          <Wrapper
+            key={item.title}
+            className="px-am20"
+            width="282px"
+            height="222px"
+            onClick={() => navigate('/detail')}
+          >
+            <Img src={item.img} />
+            <Title>{item.title}</Title>
+            <Content>{item.desc}</Content>
+          </Wrapper>
+        ))}
+      </div>
+    </>
   )
 }
 
