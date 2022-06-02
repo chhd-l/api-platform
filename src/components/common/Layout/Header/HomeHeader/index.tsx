@@ -19,12 +19,12 @@ const HomeHeader = () => {
       <div className="w-am1200 m-auto h-am70 flex items-center justify-between">
         <Img src={LOGO_white} />
         <div className="text-am16 text-white">
-          <SearchInput
+          {/* <SearchInput
             suffix={<IconFont type="icon-bianzu" onClick={() => navigate('/search')} />}
             style={{ border: '1px solid #7F7F7F', marginRight: 23 }}
             backgroundcolor="#0B121C"
-          />
-          Console
+          /> */}
+          <div onClick={() => navigate('/search')}>Console</div>
         </div>
       </div>
     </HeaderBox>

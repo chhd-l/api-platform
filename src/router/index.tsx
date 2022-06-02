@@ -4,6 +4,7 @@ import Layout from '../components/common/Layout'
 import Home from '../views/Home'
 import Detail from '../views/Detail'
 import { Search } from '../views/Search'
+import { Apis } from '../views/Apis'
 
 const routers: RouteObject[] = [
   {
@@ -21,6 +22,10 @@ const routers: RouteObject[] = [
       {
         path: '/search',
         element: <Search />,
+      },
+      {
+        path: '/apis',
+        element: <Apis />,
       },
     ],
   },

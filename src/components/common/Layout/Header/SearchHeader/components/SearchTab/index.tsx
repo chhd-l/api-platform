@@ -1,19 +1,53 @@
-import { Tabs } from 'antd'
+import { useAtom } from 'jotai'
+import { useNavigate } from 'react-router-dom'
+import styled from 'styled-components'
+import { SearchAtom } from '../../../../../../../store/search'
 
-const { TabPane } = Tabs
+type TabProps = {
+  color: string
+}
+const Tab = styled.div<TabProps>`
+  height: 70px;
+  line-height: 70px;
+  border-bottom: 1px solid ${(props) => props.color || 'transparent'};
+  color: ${(props) => props.color || '#ffffff'};
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 20px;
+`
 
+const menu = [
+  {
+    name: 'Home',
+    src: '/search',
+  },
+  {
+    name: 'APIs',
+    src: '/apis',
+  },
+  {
+    name: 'Applications',
+    src: '/apis',
+  },
+]
 export const SearchTab = () => {
+  const [info, setInfo] = useAtom(SearchAtom)
+  const navigate = useNavigate()
   return (
-    <Tabs defaultActiveKey="1" tabBarGutter={100}>
-      <TabPane tab="Tab 1" key="1">
-        Content of Tab Pane 1
-      </TabPane>
-      <TabPane tab="Tab 2" key="2">
-        Content of Tab Pane 2
-      </TabPane>
-      <TabPane tab="Tab 3" key="3">
-        Content of Tab Pane 3
-      </TabPane>
-    </Tabs>
+    <>
+      {menu.map((item, index) => (
+        <Tab
+          key={item.name}
+          className={`${info.current === index && 'border-b border-green text-green'}`}
+          color={info.current === Number(index) ? '#6CA100' : ''}
+          onClick={() => {
+            setInfo({ current: Number(index) })
+            navigate(item.src!)
+          }}
+        >
+          {item.name}
+        </Tab>
+      ))}
+    </>
   )
 }

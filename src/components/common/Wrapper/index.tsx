@@ -8,6 +8,7 @@ const Wrapper = styled.div<WrapperProps>`
   border-radius: 4px;
   width: ${(props) => props.width || 'auto'};
   height: ${(props) => props.height || 'auto'};
+  border: 1px solid transparent;
   &:hover {
     border: 1px solid #95b94f;
     background-color: #fdfff8;
