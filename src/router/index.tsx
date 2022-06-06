@@ -5,7 +5,7 @@ import Home from '../views/Home'
 import Detail from '../views/Detail'
 import { Search } from '../views/Search'
 import { Apis } from '../views/Apis'
-
+import { ApiDetail } from '../views/Apis/Detail'
 const routers: RouteObject[] = [
   {
     path: '/',
@@ -28,8 +28,8 @@ const routers: RouteObject[] = [
         element: <Apis />,
       },
       {
-        path: '/api-details',
-        element: <Apis />,
+        path: '/apis/api-details',
+        element: <ApiDetail />,
       },
     ],
   },

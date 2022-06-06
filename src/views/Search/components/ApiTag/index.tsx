@@ -1,6 +1,6 @@
-import Wrapper from '../../../../components/common/Wrapper'
 import DownLoad from '../../../../assets/image/download.png'
 import styled from 'styled-components'
+import { useNavigate } from 'react-router-dom'
 
 type ApiTagProps = {
   title: string
@@ -20,6 +20,7 @@ export const Button = styled.div`
 `
 
 export const ApiTag = ({ title, desc }: ApiTagProps) => {
+  const navigate = useNavigate()
   return (
     <>
       <div className="mt-am20 flex flex-row items-center w-am342 m-auto">
@@ -28,7 +29,7 @@ export const ApiTag = ({ title, desc }: ApiTagProps) => {
       </div>
       <div className="text-am16 text-am_666666 text-left mt-am25 mb-am30 w-am342 m-auto h-am57">{desc}</div>
       <div className="w-am342 m-auto text-left">
-        <Button>API Details</Button>
+        <Button onClick={() => navigate('./api-details')}>API Details</Button>
       </div>
     </>
   )

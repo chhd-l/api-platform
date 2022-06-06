@@ -16,6 +16,7 @@ module.exports = {
 
     extend: {
       width: {
+        am273: '273px',
         am275: '275px',
         am282: '282px',
         am284: '284px',
@@ -30,6 +31,7 @@ module.exports = {
       },
       height: {
         am26: '26px',
+        am49: '49px',
         am57: '57px',
         am70: '70px',
         am148: '148px',
@@ -61,12 +63,16 @@ module.exports = {
         am_11: '11%',
         am_19: '19%',
         am_33: '33%',
+        am6: '6px',
+        am18: '18px',
         am20: '20px',
+        am24: '24px',
         am25: '25px',
         am28: '28px',
         am30: '30px',
         am43: '43px',
         am50: '50px',
+        am60: '60px',
       },
       textColor: {
         am_568300: '#568300',
