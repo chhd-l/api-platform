@@ -7,7 +7,7 @@ export const Apis = () => {
     <>
       <SearchHeader />
       <Catalog />
-      {/* <Pagination total={60} showSizeChanger showQuickJumper showSizeChanger={false} pageSizeOptions={[12]} /> */}
+      <Pagination total={60} showSizeChanger showQuickJumper showSizeChanger={false} pageSizeOptions={[12]} />
     </>
   )
 }

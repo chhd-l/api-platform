@@ -4,8 +4,7 @@ import LOGO_white from '../../../../../assets/image/LOGO_white.png'
 import LOGO_black from '../../../../../assets/image/LOGO_black.png'
 import user from '../../../../../assets/image/user.png'
 import { SearchTab } from './components/SearchTab'
-import { useAtom } from 'jotai'
-import { SearchAtom } from '../../../../../store/search'
+import { useLocation } from 'react-router-dom'
 
 const Img = styled.img`
   width: 118px;
@@ -20,12 +19,11 @@ const Avatar = styled.img`
   border-radius: 50%;
 `
 export const SearchHeader = () => {
-  const [info] = useAtom(SearchAtom)
-
+  const location = useLocation()
   return (
-    <HeaderBox backGroundColor={`${info.current !== 0 ? '#ffffff' : '#0b121c'}`}>
+    <HeaderBox backGroundColor={`${location.pathname !== '/search' ? '#ffffff' : '#0b121c'}`}>
       <div className="w-am1200 m-auto h-am70 flex items-center ">
-        <Img src={info.current === 0 ? LOGO_white : LOGO_black} className="mr-14" />
+        <Img src={location.pathname === '/search' ? LOGO_white : LOGO_black} className="mr-14" />
         <div className="flex flex-row w-full items-center justify-between">
           <SearchTab />
           <Avatar />

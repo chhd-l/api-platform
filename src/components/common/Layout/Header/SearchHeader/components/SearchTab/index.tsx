@@ -1,7 +1,5 @@
-import { useAtom } from 'jotai'
 import { useNavigate, useLocation } from 'react-router-dom'
 import styled from 'styled-components'
-import { SearchAtom } from '../../../../../../../store/search'
 
 type TabProps = {
   color: string
@@ -18,7 +16,7 @@ const menu = [
   },
   {
     name: 'Applications',
-    url: '/apis',
+    url: '/applications',
   },
 ]
 
@@ -33,19 +31,19 @@ const Tab = styled.div<TabProps>`
 `
 
 export const SearchTab = () => {
-  const [info, setInfo] = useAtom(SearchAtom)
   const navigate = useNavigate()
+  const location = useLocation()
+
   return (
     <div className="flex flx-row">
-      {menu.map((item, index) => (
+      {menu.map((item) => (
         <Tab
           key={item.name}
-          className={`${info.current === index && 'border-b border-green text-green'} ${
-            info.current === 0 ? 'text-white' : 'text-am_333333'
+          className={`${location.pathname === item.url && 'border-b border-green text-green'} ${
+            location.pathname === '/search' ? 'text-white' : 'text-am_333333'
           }`}
-          color={info.current === Number(index) ? '#6CA100' : ''}
+          color={location.pathname === item.url ? '#6CA100' : ''}
           onClick={() => {
-            setInfo({ current: Number(index) })
             navigate(item.url)
           }}
         >
