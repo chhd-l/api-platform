@@ -32,6 +32,10 @@ const routers: RouteObject[] = [
         path: '/Applications',
         element: <Applications />,
       },
+      {
+        path: '/api-details',
+        element: <Apis />,
+      }
     ],
   },
 ]

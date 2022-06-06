@@ -1,53 +1,55 @@
-import { useAtom } from 'jotai'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 import styled from 'styled-components'
-import { SearchAtom } from '../../../../../../../store/search'
 
 type TabProps = {
   color: string
 }
-const Tab = styled.div<TabProps>`
-  height: 70px;
-  line-height: 70px;
-  border-bottom: 1px solid ${(props) => props.color || 'transparent'};
-  color: ${(props) => props.color || '#ffffff'};
-  font-size: 16px;
-  cursor: pointer;
-  margin-right: 20px;
-`
 
 const menu = [
   {
     name: 'Home',
-    src: '/search',
+    url: '/search',
   },
   {
     name: 'APIs',
-    src: '/apis',
+    url: '/apis',
   },
   {
     name: 'Applications',
-    src: '/apis',
+    url: '/applications',
   },
 ]
+
+const Tab = styled.div<TabProps>`
+  height: 70px;
+  line-height: 70px;
+  border-bottom: 1px solid ${(props) => props.color || 'transparent'};
+  color: ${(props) => props.color};
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 60px;
+`
+
 export const SearchTab = () => {
-  const [info, setInfo] = useAtom(SearchAtom)
   const navigate = useNavigate()
+  const location = useLocation()
+
   return (
-    <>
-      {menu.map((item, index) => (
+    <div className="flex flx-row">
+      {menu.map((item) => (
         <Tab
           key={item.name}
-          className={`${info.current === index && 'border-b border-green text-green'}`}
-          color={info.current === Number(index) ? '#6CA100' : ''}
+          className={`${location.pathname === item.url && 'border-b border-green text-green'} ${
+            location.pathname === '/search' ? 'text-white' : 'text-am_333333'
+          }`}
+          color={location.pathname === item.url ? '#6CA100' : ''}
           onClick={() => {
-            setInfo({ current: Number(index) })
-            navigate(item.src!)
+            navigate(item.url)
           }}
         >
           {item.name}
         </Tab>
       ))}
-    </>
+    </div>
   )
 }
