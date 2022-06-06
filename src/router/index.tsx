@@ -5,6 +5,7 @@ import Home from '../views/Home'
 import Detail from '../views/Detail'
 import { Search } from '../views/Search'
 import { Apis } from '../views/Apis'
+import Applications from '../views/Applications'
 
 const routers: RouteObject[] = [
   {
@@ -26,6 +27,10 @@ const routers: RouteObject[] = [
       {
         path: '/apis',
         element: <Apis />,
+      },
+      {
+        path: '/Applications',
+        element: <Applications />,
       },
     ],
   },
