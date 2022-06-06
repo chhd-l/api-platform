@@ -5,6 +5,7 @@ import Left from '../../../../assets/image/Left.png'
 import Right from '../../../../assets/image/Right.png'
 import DownLoad from '../../../../assets/image/download.png'
 import { useState } from 'react'
+import { Button } from '../ApiTag'
 
 const data = [
   {
@@ -40,16 +41,6 @@ const data = [
     desc: 'To retrieve and modify pet data.',
   },
 ]
-export const Button = styled.div`
-  background: #6ca100;
-  border-radius: 45px;
-  width: 150px;
-  height: 40px;
-  font-size: 16px;
-  line-height: 40px;
-  color: #ffffff;
-  /* margin: 0 auto; */
-`
 
 const SampleNextArrow = styled.div`
   background: url(${Right}) center no-repeat;

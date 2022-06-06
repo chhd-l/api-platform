@@ -1,5 +1,13 @@
+import { Pagination } from 'antd'
 import { SearchHeader } from '../../components/common/Layout/Header/SearchHeader'
+import { Catalog } from './components/Catalog'
 
 export const Apis = () => {
-  return <SearchHeader />
+  return (
+    <>
+      <SearchHeader />
+      <Catalog />
+      {/* <Pagination total={60} showSizeChanger showQuickJumper showSizeChanger={false} pageSizeOptions={[12]} /> */}
+    </>
+  )
 }

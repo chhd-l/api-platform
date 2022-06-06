@@ -7,6 +7,7 @@ module.exports = {
       black: '#0B121C',
       white: '#FFFFFF',
       gray: {
+        300: '#AEAEB0',
         400: '#CCCCCC',
         500: '#E6E6E6 ',
         600: '#f4f4f4',
@@ -20,8 +21,11 @@ module.exports = {
         am284: '284px',
         am384: '384px',
         am242: '242px',
-        am525: '525px',
+        am342: '342px',
         am377: '377px',
+        am450: '450px',
+        am525: '525px',
+        am646: '646px',
         am1200: '1200px',
       },
       height: {
@@ -59,8 +63,10 @@ module.exports = {
         am_33: '33%',
         am20: '20px',
         am25: '25px',
+        am28: '28px',
         am30: '30px',
         am43: '43px',
+        am50: '50px',
       },
       textColor: {
         am_568300: '#568300',

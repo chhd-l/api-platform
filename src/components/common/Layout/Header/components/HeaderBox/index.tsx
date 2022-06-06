@@ -1,6 +1,10 @@
 import styled from 'styled-components'
 
-export const HeaderBox = styled.div`
-  background-color: #0b121c;
+type HeaderBoxProps = {
+  backGroundColor?: string
+}
+export const HeaderBox = styled.div<HeaderBoxProps>`
+  background-color: ${(props) => props.backGroundColor || '#0b121c'};
   height: 70px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
 `
