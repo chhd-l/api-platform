@@ -66,9 +66,9 @@ export const Catalog = () => {
         style={{ width: 379, marginTop: 14 }}
         placeholder="input search content"
       />
-      {_.chunk(data, 3).map((item, index) => (
+      {_.chunk(data, 3).map((item: any, index: number) => (
         <Row key={index} gutter={25}>
-          {item.map((child, key) => (
+          {item.map((child: any, key: number) => (
             <Col span={8} key={key}>
               <Wrapper width="382px" height="227px" className="my-am28">
                 <ApiTag desc={child.desc} title={child.title} />
