@@ -9,6 +9,10 @@ import en_US from 'antd/lib/locale/en_US'
 
 const container = document.getElementById('root')
 const root = createRoot(container!)
+// ConfigProvider.config({
+//   theme: '#6CA100',
+//   prefixCls: 'ant', // 4.13.0+
+// })
 root.render(
   <React.StrictMode>
     <BrowserRouter>
