@@ -38,28 +38,28 @@ const APIContracts = () => {
 
     const columns: ColumnsType<DataType> = [
       {
-        title: 'Client Application',
+        title: 'API',
         dataIndex: 'name',
         key: 'name',
       },
       {
-        title: 'Client Application',
+        title: 'Environment / Instance',
         dataIndex: 'name',
         key: 'name',
       },
       {
-        title: 'Client Application',
+        title: 'SLA Tier',
         dataIndex: 'name',
         key: 'name',
       },
       {
-        title: 'Credentials',
+        title: 'Request Status',
         key: 'Credentials',
         render: (_: any, record: any) => (
           <div className='flex items-center'>
             <div className='CredentialsIcon' />
-            <Button className='text-am_666666' type="text">
-              Delete
+            <Button className='text-am_6CA100' type="text">
+                Pending
             </Button>
           </div>
         ),
@@ -70,7 +70,7 @@ const APIContracts = () => {
         <Title style={{ marginBottom: '17px', marginTop:'50px' }} level={4}>
             API Contracts
         </Title>
-        <Table columns={columns} dataSource={data} />
+        <Table columns={columns} dataSource={data} pagination={false} />
     </div>
 }
 

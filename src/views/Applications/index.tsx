@@ -68,7 +68,7 @@ const Applications = () => {
     <div className="w-am1200 m-auto text-left Applications">
       <SearchHeader />
       <Title className='mt-12' level={3}>Applications</Title>
-      <Table columns={columns} dataSource={data} />
+      <Table columns={columns} dataSource={data} pagination={false} />
     </div>
   )
 }
