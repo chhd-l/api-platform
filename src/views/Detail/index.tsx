@@ -6,6 +6,8 @@ import { IconFont } from '../../components/common/IconFont'
 import api_bg from '../../assets/image/api_bg.png'
 import { useState } from 'react'
 import Footer from '../../components/common/Footer'
+import LOGO_black from '../../assets/image/LOGO_black.png'
+import { SearchInput } from '../../components/common/Layout/Header/components/SearchInput'
 
 export type LeftMenuProps = { width?: string; height?: string }
 const LeftMenu = styled.div<LeftMenuProps>`
@@ -22,7 +24,10 @@ const Icon = styled.img`
   height: 24px;
   margin-right: 15px;
 `
-
+const Img = styled.img`
+  width: 109.93px;
+  height: 22px;
+`
 const menuData = [
   {
     title: 'General Topics',
@@ -69,10 +74,11 @@ export default function Detail() {
   const [showNotes, setShowNotes] = useState(false)
   return (
     <div>
-      {/* <DetailHeader /> */}
       <div className="flex flex-row h-full fixed">
-        <div></div>
         <div className="flex flex-col w-am284 h-full ">
+          <LeftMenu height="70px" className="flex items-center">
+            <Img src={LOGO_black} />
+          </LeftMenu>
           <LeftMenu height="70px" className="flex">
             <Icon src={icon} />
             <div className="text-am_333333 text-am22">HTTP API</div>
@@ -103,6 +109,10 @@ export default function Detail() {
           </div>
         </div>
         <div className="h-full overflow-auto">
+          <div className="flex flex-row h-am70 w-full items-center justify-between">
+            <div className="ml-4 text-am16">HTTP API</div>
+            <SearchInput suffix={<IconFont type="icon-bianzu" />} style={{ marginRight: 360 }} placeholder="search" />
+          </div>
           {showNotes ? (
             <div className="h-am200 text-am48 font-medium w-full pl-am39">HTTP API</div>
           ) : (
