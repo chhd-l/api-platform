@@ -1,6 +1,4 @@
 import styled from 'styled-components'
-// import { IconFont } from '../../components/common/IconFont'
-import DetailHeader from '../../components/common/Layout/Header/DetailHeader'
 import icon from '../../assets/image/icon.png'
 import { IconFont } from '../../components/common/IconFont'
 import api_bg from '../../assets/image/api_bg.png'
@@ -8,6 +6,7 @@ import { useState } from 'react'
 import Footer from '../../components/common/Footer'
 import LOGO_black from '../../assets/image/LOGO_black.png'
 import { SearchInput } from '../../components/common/Layout/Header/components/SearchInput'
+import { ReleaseNotes } from './components/ReleaseNotes'
 
 export type LeftMenuProps = { width?: string; height?: string }
 const LeftMenu = styled.div<LeftMenuProps>`
@@ -70,6 +69,7 @@ const menuData = [
     list: ['Tax Categories', 'Product Discounts', 'Cart Discounts', 'Discount Codes', ''],
   },
 ]
+
 export default function Detail() {
   const [showNotes, setShowNotes] = useState(false)
   return (
@@ -118,8 +118,7 @@ export default function Detail() {
           ) : (
             <img src={api_bg} alt="" />
           )}
-          <div className="h-80">111</div>
-          <div className="h-80">111</div>
+          <ReleaseNotes />
           <Footer />
         </div>
       </div>
