@@ -72,7 +72,7 @@ const Applications = () => {
   return (
     <div className="w-am1200 m-auto text-left Applications">
       <SearchHeader />
-      <Title className="mt-12" level={3}>
+      <Title className="mt-12 title" level={3}>
         Applications
       </Title>
       <Table columns={columns} dataSource={data} pagination={false} />

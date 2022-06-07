@@ -3,9 +3,10 @@ import { SearchHeader } from "../../../../components/common/Layout/Header/Search
 import APIContracts from "../APIContracts/index."
 import BasicInformation from "../BasicInformation"
 import Metrics from "../Metrics"
+import './Style.less'
 
 const ApplicationsDetails = () => {
-    return <div className="w-am1200 m-auto text-left pb-am110">
+    return <div className="w-am1200 m-auto text-left pb-am110 ApplicationsDetails">
         <SearchHeader />
         <div style={{marginTop:'49px'}}>
             <Form

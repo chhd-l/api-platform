@@ -4,7 +4,7 @@ const { Title } = Typography
 
 const BasicInformation = () => {
     return <div>
-        <Title style={{ marginBottom: '23px' }} level={4}>
+        <Title className="title" style={{ marginBottom: '23px' }} level={4}>
             Basic Information
         </Title>
         <div className="flex">
