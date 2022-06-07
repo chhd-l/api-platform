@@ -67,7 +67,7 @@ const APIContracts = () => {
     ];
 
     return <div className="w-am1200 m-auto text-left">
-        <Title style={{ marginBottom: '17px', marginTop:'50px' }} level={4}>
+        <Title className="title" style={{ marginBottom: '17px', marginTop:'50px' }} level={4}>
             API Contracts
         </Title>
         <Table columns={columns} dataSource={data} pagination={false} />

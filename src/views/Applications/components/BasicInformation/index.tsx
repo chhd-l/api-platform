@@ -38,12 +38,12 @@ const BasicInformation = () => {
                             <div className="flex items-center">
                                 <div className="text-am_666666">Client id: </div>
                                 <div className="flex-1"></div>
-                                <div className="text-am_6CA100 flex items-center"><ProfileOutlined className="mr-2" />Copy</div>
+                                <div className="text-am_6CA100 flex items-center cursor-pointer"><ProfileOutlined className="mr-2" />Copy</div>
                             </div>
                             <div className="flex items-center">
                                 <div className="text-am_666666">Client Secret: </div>
                                 <div className="flex-1"></div>
-                                <div className="text-am_6CA100 flex items-center"><ProfileOutlined className="mr-2" />Copy</div>
+                                <div className="text-am_6CA100 flex items-center cursor-pointer"><ProfileOutlined className="mr-2" />Copy</div>
                             </div>
                         </div>
                     }
