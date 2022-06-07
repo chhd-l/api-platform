@@ -70,6 +70,7 @@ module.exports = {
         am30: '30px',
         am39: '39px',
         am43: '43px',
+        am110: '110px !important',
       },
       margin: {
         am_5: '5%',
@@ -93,7 +94,7 @@ module.exports = {
         am_373737: '#373737',
         am_333333: '#333333',
         am_666666: '#666666',
-        am_6CA100: '#6CA100',
+        am_6CA100: '#6CA100 !important',
         am_058CDF: '#058CDF',
       },
       inset: {

@@ -75,7 +75,7 @@ const Applications = () => {
       <Title className="mt-12" level={3}>
         Applications
       </Title>
-      <Table columns={columns} dataSource={data} />
+      <Table columns={columns} dataSource={data} pagination={false} />
       <Footer />
     </div>
   )

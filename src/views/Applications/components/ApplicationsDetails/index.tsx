@@ -5,7 +5,7 @@ import BasicInformation from "../BasicInformation"
 import Metrics from "../Metrics"
 
 const ApplicationsDetails = () => {
-    return <div className="w-am1200 m-auto text-left">
+    return <div className="w-am1200 m-auto text-left pb-am110">
         <SearchHeader />
         <div style={{marginTop:'49px'}}>
             <Form
