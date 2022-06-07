@@ -37,7 +37,12 @@ const Footer = () => {
         <div className="text-am_333333 text-am12 text-left mr-am_5">
           <p className="font-bold">Developer Center</p>
           {Developer.map((item) => (
-            <p key={item}>{item}</p>
+            <p key={item}>
+              {item}
+              {item === 'Custom Applications' && (
+                <span className="text-am_058CDF bg-blue-500  p-1 rounded-sm">BETA</span>
+              )}
+            </p>
           ))}
         </div>
         <div className="text-am_333333 text-am12 text-left mr-am_33">
@@ -54,7 +59,7 @@ const Footer = () => {
       </Wrapper>
       <div className="border-t border-gray-400 w-am1200 m-auto" />
       <div className="flex  justify-between text-am12 text-am_333333  py-2 w-am1200 m-auto">
-        <span>Copyright © 2022 commercetools</span>
+        <span>Copyright © 2022 Deloitte</span>
         <span>
           <span className="border-r border-gray-400 pr-2">Privacy Policy</span>
           <span className="ml-2">Imprint</span>

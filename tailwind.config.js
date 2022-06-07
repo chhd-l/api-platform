@@ -15,6 +15,10 @@ module.exports = {
         600: '#f4f4f4',
         700: '#E3E3E3',
       },
+      blue:{
+        500:'#B6E1FD',
+        600:'#058CDF'
+      }
     },
 
     extend: {
@@ -89,6 +93,7 @@ module.exports = {
         am_333333: '#333333',
         am_666666: '#666666',
         am_6CA100: '#6CA100',
+        am_058CDF: '#058CDF',
       },
       inset: {
         am50: '50px',
