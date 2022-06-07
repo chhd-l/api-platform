@@ -34,8 +34,10 @@ const HomeHeader = () => {
             style={{ border: '1px solid #7F7F7F', marginRight: 23 }}
             backgroundcolor="#0B121C"
           /> */}
-          <div onClick={() => navigate('/search')}>Console</div>
-          <LoginButton>Login</LoginButton>
+          <div onClick={() => navigate('/search')} className="cursor-pointer">
+            Console
+          </div>
+          {/* <LoginButton>Login</LoginButton> */}
         </div>
       </div>
     </HeaderBox>

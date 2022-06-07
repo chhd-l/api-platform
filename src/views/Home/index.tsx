@@ -29,7 +29,9 @@ export default function Home() {
         <div className="w-am1200 m-auto">
           <Product />
           <SDKTooling />
-          <div className="text-am_568300 text-am16 text-left underline mt-2">See all SDKs and tools...</div>
+          <div className="text-am_568300 text-am16 text-left underline mt-2 cursor-pointer">
+            See all SDKs and tools...
+          </div>
           <ReleaseNotes />
         </div>
       </div>
