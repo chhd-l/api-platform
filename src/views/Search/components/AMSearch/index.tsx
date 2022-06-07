@@ -26,7 +26,7 @@ const SearchInput = styled(Input)`
 export const AMSearch = () => {
   return (
     <Img>
-      <SearchInput prefix={<IconFont type="icon-bianzu" />} placeholder="input search content" allowClear />
+      <SearchInput prefix={<IconFont type="icon-bianzu" />} placeholder="Input search content" allowClear />
     </Img>
   )
 }

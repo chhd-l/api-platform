@@ -37,7 +37,7 @@ const DetailHeader = () => {
           </Divider>
           <div className="ml-4 text-am16">HTTP API</div>
         </div>
-        <SearchInput suffix={<IconFont type="icon-bianzu" />} style={{ marginRight: 360 }} />
+        <SearchInput suffix={<IconFont type="icon-bianzu" />} style={{ marginRight: 360 }} placeholder="search" />
       </div>
     </HeaderBox>
   )
