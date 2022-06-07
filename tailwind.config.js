@@ -7,11 +7,13 @@ module.exports = {
       black: '#0B121C',
       white: '#FFFFFF',
       gray: {
+        100: '#E5E5E5',
+        200: '#F9F9F9',
         300: '#AEAEB0',
         400: '#CCCCCC',
         500: '#E6E6E6 ',
         600: '#f4f4f4',
-        100: '#E5E5E5'
+        700: '#E3E3E3',
       },
     },
 
@@ -35,6 +37,7 @@ module.exports = {
         am49: '49px',
         am57: '57px',
         am70: '70px',
+        am80: '80px',
         am148: '148px',
         am222: '222px',
         18: '300px',
@@ -53,6 +56,8 @@ module.exports = {
         am50: '50px',
       },
       padding: {
+        am_9: '9%',
+        am14: '14px',
         am20: '20px',
         am24: '24px',
         am30: '30px',

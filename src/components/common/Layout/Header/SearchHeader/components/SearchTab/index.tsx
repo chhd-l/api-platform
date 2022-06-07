@@ -20,6 +20,8 @@ const menu = [
   },
 ]
 
+const urls = ['/detail', '/search', '/apis', '/apis/api-details', 'applicationsDetails', 'applications']
+
 const Tab = styled.div<TabProps>`
   height: 70px;
   line-height: 70px;
