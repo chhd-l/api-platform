@@ -4,6 +4,7 @@ import DetailHeader from '../../components/common/Layout/Header/DetailHeader'
 import icon from '../../assets/image/icon.png'
 import { IconFont } from '../../components/common/IconFont'
 import api_bg from '../../assets/image/api_bg.png'
+import { useState } from 'react'
 
 export type LeftMenuProps = { width?: string; height?: string }
 const LeftMenu = styled.div<LeftMenuProps>`
@@ -13,6 +14,7 @@ const LeftMenu = styled.div<LeftMenuProps>`
   align-items: center;
   padding-left: 24px;
   border-bottom: none;
+  cursor: pointer;
 `
 const Icon = styled.img`
   width: 24px;
@@ -63,6 +65,7 @@ const menuData = [
   },
 ]
 export default function Detail() {
+  const [showNotes, setShowNotes] = useState(false)
   return (
     <div>
       <DetailHeader />
@@ -72,7 +75,13 @@ export default function Detail() {
             <Icon src={icon} />
             <div className="text-am_333333 text-am22">HTTP API</div>
           </LeftMenu>
-          <LeftMenu height="70px" className="flex">
+          <LeftMenu
+            height="70px"
+            className="flex"
+            onClick={() => {
+              setShowNotes(true)
+            }}
+          >
             <span className="underline text-am_568300 text-am16">Release notes</span>
             <IconFont type="icon-a-bianzu41" />
           </LeftMenu>
@@ -90,7 +99,11 @@ export default function Detail() {
           </LeftMenu>
         </div>
         <div>
-          <img src={api_bg} alt="" />
+          {showNotes ? (
+            <div className="h-am200 text-am48 font-medium w-full pl-am39">HTTP API</div>
+          ) : (
+            <img src={api_bg} alt="" />
+          )}
         </div>
       </div>
     </div>

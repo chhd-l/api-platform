@@ -39,6 +39,7 @@ module.exports = {
         am70: '70px',
         am80: '80px',
         am148: '148px',
+        am200: '200px',
         am222: '222px',
         18: '300px',
       },
@@ -53,6 +54,7 @@ module.exports = {
         am22: '22px',
         am24: '24px',
         am26: '26px',
+        am48: '48px',
         am50: '50px',
       },
       padding: {
@@ -61,6 +63,7 @@ module.exports = {
         am20: '20px',
         am24: '24px',
         am30: '30px',
+        am39: '39px',
         am43: '43px',
       },
       margin: {

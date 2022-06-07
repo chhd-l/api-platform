@@ -12,6 +12,7 @@ const Wrapper = styled.div<WrapperProps>`
   &:hover {
     border: 1px solid #95b94f;
     background-color: #fdfff8;
+    cursor: pointer;
   }
 `
 
