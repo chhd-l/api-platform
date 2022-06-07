@@ -15,10 +15,10 @@ module.exports = {
         600: '#f4f4f4',
         700: '#E3E3E3',
       },
-      blue:{
-        500:'#B6E1FD',
-        600:'#058CDF'
-      }
+      blue: {
+        500: '#B6E1FD',
+        600: '#058CDF',
+      },
     },
 
     extend: {
@@ -45,6 +45,7 @@ module.exports = {
         am148: '148px',
         am200: '200px',
         am222: '222px',
+        am1080: '1080px',
         18: '300px',
       },
       lineHeight: {

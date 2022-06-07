@@ -69,14 +69,15 @@ export default function Detail() {
   const [showNotes, setShowNotes] = useState(false)
   return (
     <div>
-      <DetailHeader />
-      <div className="flex">
-        <div className="">
+      {/* <DetailHeader /> */}
+      <div className="flex flex-row h-full fixed">
+        <div></div>
+        <div className="flex flex-col w-am284 h-full ">
           <LeftMenu height="70px" className="flex">
             <Icon src={icon} />
             <div className="text-am_333333 text-am22">HTTP API</div>
           </LeftMenu>
-          <div className="fixed overflow-y-scroll w-am284">
+          <div className="flex-1  overflow-auto">
             <LeftMenu
               height="70px"
               className="flex"
@@ -101,12 +102,14 @@ export default function Detail() {
             </LeftMenu>
           </div>
         </div>
-        <div>
+        <div className="h-full overflow-auto">
           {showNotes ? (
             <div className="h-am200 text-am48 font-medium w-full pl-am39">HTTP API</div>
           ) : (
             <img src={api_bg} alt="" />
           )}
+          <div className="h-80">111</div>
+          <div className="h-80">111</div>
           <Footer />
         </div>
       </div>

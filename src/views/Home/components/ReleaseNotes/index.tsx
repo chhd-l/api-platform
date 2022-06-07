@@ -53,7 +53,7 @@ const data = [
 
 const ReleaseNotes = () => {
   return (
-    <>
+    <div className="pb-8">
       <MyTitle>Release Notes</MyTitle>
       <Wrapper>
         {data.map((item) => (
@@ -66,7 +66,7 @@ const ReleaseNotes = () => {
           </List>
         ))}
       </Wrapper>
-    </>
+    </div>
   )
 }
 
